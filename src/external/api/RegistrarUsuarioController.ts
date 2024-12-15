@@ -1,4 +1,4 @@
-import RegistrarUsuario from "@/usuario/service/RegistrarUsuario";
+import RegistrarUsuario from "@/core/usuario/service/RegistrarUsuario";
 import { Express } from "express";
 
 export default class RegistrarUsuarioController {

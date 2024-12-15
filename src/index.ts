@@ -4,9 +4,9 @@ dotenv.config();
 import express from "express";
 import RepositoriousuarioPg from "./external/db/RepositorioUsuarioPg";
 import SenhaCripto from "./external/auth/SenhaCripto";
-import RegistrarUsuario from "./usuario/service/RegistrarUsuario";
+import RegistrarUsuario from "./core/usuario/service/RegistrarUsuario";
 import RegistrarUsuarioController from "./external/api/RegistrarUsuarioController";
-import LoginUsuario from "./usuario/service/LoginUsuario";
+import LoginUsuario from "./core/usuario/service/LoginUsuario";
 import LoginUsuarioController from "./external/api/LoginUsuarioController";
 
 const app = express();

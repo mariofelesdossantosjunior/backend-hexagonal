@@ -1,6 +1,6 @@
-import Repositoriousuario from "@/usuario/service/RepositorioUsuario";
+import Repositoriousuario from "@/core/usuario/service/RepositorioUsuario";
 import db from "./db";
-import Usuario from "@/usuario/model/Usuario";
+import Usuario from "@/core/usuario/model/Usuario";
 
 export default class RepositoriousuarioPg implements Repositoriousuario {
   private static readonly items: Usuario[] = [];

@@ -1,4 +1,4 @@
-import provedorCriptografica from "@/usuario/service/ProvedorCriptografia";
+import provedorCriptografica from "@/core/usuario/service/ProvedorCriptografia";
 import bcrypt from "bcrypt";
 
 export default class SenhaCripto implements provedorCriptografica {
