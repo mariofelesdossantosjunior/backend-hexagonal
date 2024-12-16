@@ -1,7 +1,6 @@
 import LoginUsuario from "@/core/usuario/service/LoginUsuario";
 import { Express } from "express";
 import ProvedorJWT from "./ProvedorJWT";
-import UsuarioMiddleware from "./UsuarioMiddleware";
 
 export default class LoginUsuarioController {
   constructor(servidor: Express, casoDeUso: LoginUsuario) {
@@ -15,7 +14,6 @@ export default class LoginUsuarioController {
         const provedorJWT = new ProvedorJWT(process.env.JWT_SECRET!);
 
         res.status(200).send({
-          usuario,
           token: provedorJWT.gerar(usuario),
         });
       } catch (error: any) {
