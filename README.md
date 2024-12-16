@@ -3,5 +3,8 @@
 2. Arquitetura Hexagonal (Ports and Adapters)
 3. Boas práticas de desenvolvimento de software
 4. Arquitetura, Design e Código
-5. Express
+5. Node/Express
+6. Postgres
+7. JWT
+
 

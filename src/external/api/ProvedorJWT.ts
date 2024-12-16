@@ -8,4 +8,8 @@ export default class ProvedorJWT {
       expiresIn: "1d",
     });
   }
+
+  obter(token: string): string | object {
+    return jwt.verify(token, this.segredo);
+  }
 }

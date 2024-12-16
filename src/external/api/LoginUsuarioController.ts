@@ -1,6 +1,7 @@
 import LoginUsuario from "@/core/usuario/service/LoginUsuario";
 import { Express } from "express";
 import ProvedorJWT from "./ProvedorJWT";
+import UsuarioMiddleware from "./UsuarioMiddleware";
 
 export default class LoginUsuarioController {
   constructor(servidor: Express, casoDeUso: LoginUsuario) {
